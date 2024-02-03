@@ -5,7 +5,7 @@ import FormularioDoc from './components/FormularioDoc'
 function App() {
   return (
     <Container className='my-5'>
-      <h2 className='text-center'>Administrador pacientes veterinaria</h2>
+      <h2 className='text-center mb-4'>Administrador pacientes veterinaria</h2>
       <FormularioDoc></FormularioDoc>
     </Container>
   )

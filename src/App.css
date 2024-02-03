@@ -1,6 +1,32 @@
-.fechaYhora{
-    width: 48%;
+.docForm{
+    background: #9ffcff79;
 }
-.fechaYhoraLabel{
-    margin-right: 5%;
+
+.fechaYhora {
+  width: 50%;
+}
+.formFechaYHora {
+  width: 83%;
+  padding: 0.375rem 0.75rem;
+  line-height: 2.5;
+}
+@media (max-width: 767px) {
+  .fechaYhora {
+    width: 100%;
+  }
+  .formFechaYHora {
+    width: 100%;
+  }
+  .fechaYhora-2{
+    padding-top: 3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fechaYhora {
+        width: 100%;
+    }
+    .formFechaYHora {
+      width: 74%;
+    }
 }
