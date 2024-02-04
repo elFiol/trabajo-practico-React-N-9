@@ -10,7 +10,7 @@ const FormularioDoc = () => {
     const [fecha, setFecha] = useState("")
     const [hora, setHora] = useState("")
     const [sintomas, setSintomas] = useState("")
-    const [citas, setCitas] = useState([])
+    const [citas, setCitas] = useState(JSON.parse(localStorage.getItem("citasKey")) || [])
 
     const minYmax = (texto, min, max) => {
         const valor = texto.trim();
@@ -31,6 +31,9 @@ const FormularioDoc = () => {
             }
         }
     };
+    useEffect(()=>{
+        localStorage.setItem("citasKey", JSON.stringify(citas))
+    },[citas])
     const borrarCita = (id) =>{
         const citasNueva = citas.filter(cita => cita.id !== id)
         setCitas(citasNueva)
