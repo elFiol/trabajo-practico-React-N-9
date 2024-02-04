@@ -30,7 +30,9 @@ const FormularioDoc = () => {
             }
         }
     };
+    const borrarCita = (id) =>{
 
+    }
     const handlerSubmit = (e) => {
         e.preventDefault()
         if (minYmax(mascota, 2, 20) && minYmax(duenio, 2, 20) && minYmax(sintomas, 2, 20) && esHoraValida(hora)) {
@@ -92,7 +94,7 @@ const FormularioDoc = () => {
                     </Form>
                 </div>
             </div>
-            <Citas></Citas>
+            <Citas citas={citas}></Citas>
         </>
     );
 };
