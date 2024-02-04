@@ -13,7 +13,6 @@ const FormularioDoc = () => {
 
     const minYmax = (texto, min, max) => {
         const valor = texto.trim();
-        console.log(valor.length >= min && valor.length <= max)
         return (valor.length >= min && valor.length <= max)
     }
     const esHoraValida = (horaParam) => {
@@ -22,7 +21,6 @@ const FormularioDoc = () => {
             const partesHora = horaParam.split(':');
             const horas = parseInt(partesHora[0], 10);
             const minutos = parseInt(partesHora[1], 10);
-            console.log(horas >= 0 && horas <= 23 && minutos >= 0 && minutos <= 59)
             const verificar = (horas >= 0 && horas <= 23 && minutos >= 0 && minutos <= 59)
             if (verificar !== true) {
                 alert("datos de hora no coincide")
@@ -35,34 +33,6 @@ const FormularioDoc = () => {
 
     const handlerSubmit = (e) => {
         e.preventDefault()
-        console.log("Mascota:", mascota);
-        console.log("Dueño:", duenio);
-        console.log("Fecha:", fecha);
-        console.log("Hora:", hora);
-        console.log("Síntomas:", sintomas);
-    
-        if (minYmax(mascota, 2, 20)) {
-            console.log("Condición 1 pasa");
-        } else {
-            console.log("Condición 1 no pasa");
-        }
-    
-        if (minYmax(duenio, 2, 20)) {
-            console.log("Condición 2 pasa");
-        } else {
-            console.log("Condición 2 no pasa");
-        }
-    
-        if (esHoraValida(hora)) {
-            console.log("Condición de hora pasa");
-        } else {
-            console.log("Condición de hora no pasa");
-        }
-        if (minYmax(sintomas, 2, 20)) {
-            console.log("Condición de síntomas pasa");
-        } else {
-            console.log("Condición de síntomas no pasa");
-        }
         if (minYmax(mascota, 2, 20) && minYmax(duenio, 2, 20) && minYmax(sintomas, 2, 20) && esHoraValida(hora)) {
             const cita = {
                 mascota: mascota.trim(),
