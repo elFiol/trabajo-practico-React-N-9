@@ -7,7 +7,7 @@ const Cita = () => {
             <div className='d-flex px-3 py-2'>
                 <img src={persona} className='logoDiv' alt="foto de perfil" />
                 <div className="ps-2">
-                    <p className="m-0">Mascota: j</p>
+                    <p className="m-0">Mascota: 12</p>
                     <p className="duenio">Dueño: p</p>
                 </div>
             </div>
