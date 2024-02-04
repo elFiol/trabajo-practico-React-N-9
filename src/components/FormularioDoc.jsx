@@ -2,6 +2,7 @@ import "../App.css"
 import { Button, Container, Form } from 'react-bootstrap';
 import Citas from "./Citas"
 import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const FormularioDoc = () => {
     const [mascota, setMascota] = useState("")
@@ -31,7 +32,8 @@ const FormularioDoc = () => {
         }
     };
     const borrarCita = (id) =>{
-
+        const citasNueva = citas.filter(cita => cita.id !== id)
+        setCitas(citasNueva)
     }
     const handlerSubmit = (e) => {
         e.preventDefault()
@@ -41,7 +43,8 @@ const FormularioDoc = () => {
                 duenio: duenio.trim(),
                 sintomas: sintomas.trim(),
                 hora: hora,
-                fecha: fecha
+                fecha: fecha,
+                id: uuidv4()
             }
             setCitas([...citas, cita])
             setDuenio("")
@@ -94,7 +97,7 @@ const FormularioDoc = () => {
                     </Form>
                 </div>
             </div>
-            <Citas citas={citas}></Citas>
+            <Citas citas={citas} borrarCita={borrarCita}></Citas>
         </>
     );
 };

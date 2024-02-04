@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import persona from "../persona.webp"
 
-const Cita = ({cita}) => {
+const Cita = ({cita, borrarCita}) => {
     return (
         <div className="card-veterinaria my-3 rounded-2">
             <div className='d-flex px-3 py-2'>
@@ -26,7 +26,7 @@ const Cita = ({cita}) => {
                 </div>
             </div>
             <div className="text-end py-4 px-3">
-                <Button variant="danger">Borrar</Button>
+                <Button variant="danger" type="button" onClick={()=> borrarCita(cita.id)}>Borrar</Button>
             </div>
         </div>
     );
