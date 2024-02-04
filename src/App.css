@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.docForm {
+  background: #9ffcff79;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.card-veterinaria {
+  background: rgb(255, 255, 255);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.logoDiv {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.duenio{
+    font-size: 90%;
+    color: #00000091;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.datosFaltantes{
+    background: #9ffcff79;
+}
+.datos{
+    background: #fff;
+}
+.fechaYhora {
+  width: 50%;
+}
+.formFechaYHora {
+  width: 83%;
+  padding: 0.375rem 0.75rem;
+  line-height: 2.5;
+}
+@media (max-width: 767px) {
+  .fechaYhora {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .formFechaYHora {
+    width: 100%;
+  }
+  .fechaYhora-2 {
+    padding-top: 3%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 768px) and (max-width: 991px) {
+  .fechaYhora {
+    width: 100%;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .formFechaYHora {
+    width: 74%;
+  }
 }

@@ -1,8 +1,7 @@
-# React + Vite
+# veterinaria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Crear una aplicación web que permite cargar un formulario para registrar una cita en una veterinaria, todos los datos solicitados en el formulario deben ser obligatorios.
 
-Currently, two official plugins are available:
+## La aplicación debe permitir borrar las citas y estas deben ser guardadas en el localstorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+trabajo hecho por thiago benjamin Fiol
