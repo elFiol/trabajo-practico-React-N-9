@@ -1,7 +1,24 @@
-.docForm{
+.docForm {
+  background: #9ffcff79;
+}
+.card-veterinaria {
+  background: rgb(255, 255, 255);
+}
+.logoDiv {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+}
+.duenio{
+    font-size: 90%;
+    color: #00000091;
+}
+.datosFaltantes{
     background: #9ffcff79;
 }
-
+.datos{
+    background: #fff;
+}
 .fechaYhora {
   width: 50%;
 }
@@ -17,16 +34,16 @@
   .formFechaYHora {
     width: 100%;
   }
-  .fechaYhora-2{
+  .fechaYhora-2 {
     padding-top: 3%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .fechaYhora {
-        width: 100%;
-    }
-    .formFechaYHora {
-      width: 74%;
-    }
+  .fechaYhora {
+    width: 100%;
+  }
+  .formFechaYHora {
+    width: 74%;
+  }
 }
